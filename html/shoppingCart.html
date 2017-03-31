@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海信商城-购物车</title>
+    <link rel="stylesheet" href="../css/communal.css">
+    <link rel="stylesheet" href="../css/private.css">
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/shoppingCart.html"></script>
+</head>
+<body style="background: #f5f5f5">
+    <div id="header">
+        <div class="top">
+            <span><a href="http://www.hisense.cn" target="_blank">海信集团官网</a></span> |
+            <a id="select_city" href="javascript:;">
+                <i id="header-city-id" style="margin-right: 5px;">[青岛市]</i>选择城市
+            </a> |
+            <a href="#" target="_blank" class="airing">海信商城邀您约“惠”春天</a>
+            <div class="right">
+                <strong id="login"><a href="login.html">登陆</a><a href="register.html">注册</a></strong>
+                | <a class="my_order" href="#">我的订单</a><a class="my_cart" href="#">购物车</a>
+                <a class="help_center" href="#">帮助中心</a>
+                <span class="web_nav" href="">网站导航
+                    <ul>
+                        <li>
+                            <h3>服务指南</h3>
+                            <a href="#">帮助中心</a>
+                            <a href="#">在线客服</a>
+                            <a href="#">会员中心</a>
+                            <a href="#">电子发票</a>
+                        </li>
+                        <li class="last">
+                            <h3>集团简介</h3>
+                            <a href="#">企业简介</a>
+                            <a href="#">投资者关系</a>
+                            <a href="#">企业荣誉</a>
+                            <a href="#">企业招聘</a>
+                            <a href="#">人才理念</a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="logo_wrap">
+        <div class="content">
+            <a href="/hisense/html/index.html"><img src="../img/logo.png" alt=""></a>
+            <div class="search_wrap">
+                <input id="" class="search_input" type="text" value="和你一起尝尝鲜">
+                <button class="search_btn" type="submit"></button>
+            </div>
+            <img src="../img/ewm.png" alt="" class="ewm" value='' />
+        </div>
+    </div>
+    <div id="cartLogout">
+        <span class="red">您还没有登录！ 登录后购物车的商品将保存到您的账号中</span>
+        <a href="login.html" class="btn-primary btn-bigger ml10">立即登录</a>
+    </div>
+    <div id="mycart">
+        <div class="emptyCart clearfix">
+          <div class="left">
+            <img src="../img/car.png" alt="">
+          </div>
+          <div class="left text">
+            购物车空空的哦~，去看看心仪的商品吧~ <br>  <a class="green" href="index.html">去购物&gt;</a>
+          </div>
+        </div>
+    </div>
+    <div id="recent-prod">
+        <h3><span>根据浏览记录猜你喜欢</span></h3>
+        <div class="grid">
+          <ul class="clearfix">
+           <li class="">
+              <a href="/product/57fef87b0d720e701dc7f2f6.html" class="img">
+                <img src=" ../img/670c49248ee84a5a8ca746f8112ecaa0_400_400.jpg" alt="" width="220" height="220">
+              </a>
+              <div class="name f14"><a href="/product/57fef87b0d720e701dc7f2f6.html">55吋金属超薄机皇 4K智能平板液晶电视【LED55EC720US】</a></div>
+              <div class="price clearfix">
+                <span class="">
+                  <em class="red f18">￥4199.00</em>
+                  <em class="fline ml5">￥5999.00</em>
+                </span>  <br>
+                <span>已有<em class="green">162</em>人评论</span>
+              </div>
+            </li>
+            <li class="">
+              <a href="/product/56826fa6d59d8e7b3bb1c1f4.html" class="img">
+                <img src=" ../img/3b65cf31ebe64202a87877b39d739a50_400_400.jpg" alt="" width="220" height="220">
+              </a>
+              <div class="name f14"><a href="/product/56826fa6d59d8e7b3bb1c1f4.html">1.5匹定速冷暖空调【KFR-35GW/ER09N3(1L04)】</a></div>
+              <div class="price clearfix">
+                <span class="">
+                  <em class="red f18">￥1899.00</em>
+                  <em class="fline ml5">￥2599.00</em>
+                </span>  <br>
+                <span>已有<em class="green">168</em>人评论</span>
+              </div>
+            </li>
+            <li class="">
+              <a href="/product/56826f62d59d8e7b3bb1c121.html" class="img">
+                <img src=" ../img/7e9cd28240814c6aa3820527db02e82a_400_400.jpg" alt="" width="220" height="220">
+              </a>
+              <div class="name f14"><a href="/product/56826f62d59d8e7b3bb1c121.html">228升三门电脑温控冰箱【BCD-228D11SY】</a></div>
+              <div class="price clearfix">
+                <span class="">
+                  <em class="red f18">￥1599.00</em>
+                  <em class="fline ml5">￥1799.00</em>
+                </span>  <br>
+                <span>已有<em class="green">16</em>人评论</span>
+              </div>
+            </li>
+            <li class="">
+              <a href="/product/57e8cdab937cbd21627c9251.html" class="img">
+                <img src="../img/b3143ee5246c4e909a636a21330d6cd5_400_400.jpg" alt="" width="220" height="220">
+              </a>
+              <div class="name f14"><a href="/product/57e8cdab937cbd21627c9251.html">全网通4G智能手机（琥珀金色）【小海豚】</a></div>
+              <div class="price clearfix">
+                <span class="">
+                  <em class="red f18">￥699.00</em>
+                  <em class="fline ml5">￥699.00</em>
+                </span>  <br>
+                <span>已有<em class="green">44</em>人评论</span>
+              </div>
+            </li>
+            <li class="">
+              <a href="/product/57ff60e70d720e701dc7f359.html" class="img">
+                <img src=" ../img/33e777a4935a4c7996e1fc2ef77f6730_400_400.png" alt="" width="220" height="220">
+              </a>
+              <div class="name f14"><a href="/product/57ff60e70d720e701dc7f359.html">65吋超大屏超薄曲面机皇 4K智能液晶电视【LED65EC780UC】</a></div>
+              <div class="price clearfix">
+                <span class="">
+                  <em class="red f18">￥7999.00</em>
+                  <em class="fline ml5">￥9999.00</em>
+                </span>  <br>
+                <span>已有<em class="green">44</em>人评论</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="follow">
+            <div class="content">
+                <div class="left">
+                    <div class="service-tel"><i>热线电话</i></div>
+                    <div class="tel"><i>4006-111-111</i><span>售 后</span></div>
+                    <div class="tel"><i>4008-111-111</i><span>安 装</span></div>
+                </div>
+            </div>
+            <div class="right">
+               <div>
+                   <img src="../img/qrcode_weixin.jpg">
+                   <p>扫码关注</p>
+                   <p>海信商城官方微信</p>
+               </div>
+               <div>
+                   <img src="../img/qrcode_wapsc.png">
+                   <p>扫码关注</p>
+                   <p>海信商城移动版</p>
+               </div>
+            </div>
+        </div>
+        <div class="links">
+            <dl>
+                <dt>
+                    <p>企业简介</p>
+                </dt>
+                <dd>
+                        <a href="http://www.hisense.cn/hxjt/?id=3815" target="_blank">企业简介</a>
+                        <a href="http://www.hisense.cn/hxjt/?id=3817" target="_blank">投资者关系</a>
+                        <a href="http://www.hisense.cn/hxjt/?id=3826" target="_blank">企业历史</a>
+                        <a href="http://www.hisense.cn/hxjt/?id=3941" target="_blank">企业荣誉</a>
+                        <a href="http://www.hisense.cn/hxjt/?id=3944" target="_blank">全球布局</a>
+                        <a href="http://www.hisense.cn/hxjt/?id=3947" target="_blank">企业社会责任</a>
+                        <a href="http://www.hisense.cn/hxjt/?id=4673" target="_blank">工业旅游</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <p>购物指南</p>
+                </dt>
+                <dd>
+                        <a href="http://www.hisense.com/help/58acdd18511d2178ba8a3370.html" target="_blank">购物流程</a>
+                        <a href="http://www.hisense.com/help/58ace36f511d2178ba8a3399.html" target="_blank">常见问题</a>
+                        <a href="http://www.hisense.com/help/58b6a302937cbd12e2ad8f94.html" target="_blank">在线支付</a>
+                        <a href="http://www.hisense.com/help/58b6a332937cbd12e2ad8f97.html" target="_blank">找人代付</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <p>物流配送</p>
+                </dt>
+                <dd>
+                        <a href="http://www.hisense.com/help/58b6aa73937cbd12e2ad8fc2.html" target="_blank">配送说明</a>
+                        <a href="http://www.hisense.com/help/566fc9ff66454a14c40a4301.html" target="_blank">配送安装</a>
+                        <a href="http://m.kuaidi100.com/" target="_blank">快递查询</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <p>商城服务</p>
+                </dt>
+                <dd>
+                        <a href="http://www.hisense.com/help/56b00bbd473af1658426471b.html" target="_blank">温馨提示</a>
+                        <a href="http://www.hisense.com/help/573548be473af152e1506fbe.html" target="_blank">海信电视购物须知</a>
+                        <a href="http://www.hisense.com/help/5763e874511d213adb5b10a2.html" target="_blank">非质量问题退货说明</a>
+                        <a href="http://www.hisense.com/help/57b2d6ac511d21517cdc6600.html" target="_blank">海信隐私政策</a>
+                        <a href="http://www.hisense.com/help/57b2d73c511d21517cdc6603.html" target="_blank">手机重要信息说明</a>
+                        <a href="http://www.hisense.com/help/58b6a429937cbd12e2ad8fa3.html" target="_blank">电子发票</a>
+                        <a href="  http://www.hisense.com/help/58bd219a937cbd62d4529992.html" target="_blank">全国联保</a>
+                        <a href="http://www.hisense.com/help/58bd205c937cbd62d4529986.html" target="_blank">七天无理由退换货说明</a>
+                 </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <p>服务支持</p>
+                </dt>
+                <dd>
+                        <a href="  http://www.hisense.com.cn/hisense/hx/userRepair/showadd.do" target="_blank">在线报修</a>
+                        <a href="  http://www.hisense.com.cn/fwzx/xzzx/appxz/" target="_blank">下载中心</a>
+                        <a href="http://www.hisense.com.cn/fwzx/productTec/baoyangchangshi/ds/" target="_blank">产品知识</a>
+                        <a href="  http://www.hisense.com.cn/hisense/hx/productFacilitator/queryProductFacilitator.do" target="_blank">手机服务商</a>
+                        <a href="http://www.hisense.com.cn/hisense/hx/serviceProgress/queryServiceProgress.do" target="_blank">服务进度查询</a>
+                        <a href="http://www.hisense.com.cn/fwzx/fwtx/fwzc/" target="_blank">服务政策&amp;收费标准</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <p>人才招聘</p>
+                </dt>
+                <dd>
+                        <a href="http://hisense.zhiye.com/sjobs?k=&amp;c=&amp;p=3^-1,1^-1&amp;PageIndex=1" target="_blank">社会招聘</a>
+                        <a href="  http://hisense.zhiye.com/cjobs?k=&amp;c=&amp;p=3^-1,1^-1&amp;PageIndex=1" target="_blank">校园招聘</a>
+                        <a href="http://www.hisense.cn/qx/?id=3966" target="_blank">人才理念</a>
+                        <a href="http://www.hisense.cn/qx/?id=3967" target="_blank">员工生活</a>
+                        <a href="http://www.hisense.cn/qx/?id=3968" target="_blank">薪酬福利</a>
+                        <a href="http://www.hisense.cn/qx/?id=3969" target="_blank">培训与发展</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="copyright">
+            <ul class="promise">
+                <li><img src="../img/qglb_icon.png"><a href="http://www.hisense.com/help/58bd219a937cbd62d4529992.html" target="_blank"><span>全国联保</span></a></li>
+                <li><img src="../img/shdh_icon.png"><a href="http://www.hisense.com/help/58b6aa73937cbd12e2ad8fc2.html" target="_blank"><span>送货到户</span></a></li>
+                <li><img src="../img/qglb_icon.png"><a href="http://www.hisense.com/help/58b6aa73937cbd12e2ad8fc2.html" target="_blank"><span>全场包邮</span></a></li>
+                <li><img src="../img/qtth_icon.png"><a href="http://www.hisense.com/help/58bd205c937cbd62d4529986.html" target="_blank"><span>七天无理由退换货</span></a></li>
+            </ul>
+            <p>Copyright 2015 Hisense Group All Rights Reserved. 海信集团有限公司版权所有 鲁ICP备05027830</p>
+            <ul class="bottom_logo">
+                    <li><a href="https://ss.knet.cn/verifyseal.dll?sn=a11123111010008255307708&amp;comefrom=trust&amp;trustKey=dn&amp;trustValue=" target="_blank"><img src="../img/3c4cee9a03fc4205a6c8edb99eb39c3f.jpg" alt=""></a></li>
+                    <li><a href="http://www.hisense.com/images/backstage/e773b727762043c78d1e6afac6f23efb.jpg?tem=1477642885491" target="_blank"><img src="../img/d2ad19fdd22844b1bc1d97f30f73cadb.jpg" alt=""></a></li>
+                    <li><a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank"><img src="../img/f9a4d372bfcd422ca370a6bc5f306af5.png" alt=""></a></li>
+                    <li><a href="http://www.cecdc.com/query/credit.html" target="_blank"><img src="../img/acbb55310dd640d99f9fb7f3183aff15.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <ul id="fixed-nav">
+        <li class="cart"><a href="#" target="_blank" title="购物车" style="display: inline-block;width: 100%;height: 100%;"></a></li>
+        <li class="cus-ser"><a href="javascript:;" title="在线客服" style="display: inline-block;width: 100%;height: 100%;"></a></li>
+        <li class="contact"><a href="#" target="_blank" title="我的浏览记录" style="display: inline-block;width: 100%;height: 100%;"></a></li>
+        <li class="back-top"><a title="回到顶部" style="display: inline-block;width: 100%;height: 100%;" href="javascript:;"></a></li>
+    </ul>
+</body>
+</html>
